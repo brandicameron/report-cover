@@ -1,0 +1,38 @@
+.copyText {
+  position: relative;
+  grid-column: 1/-1;
+  height: 40px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  border-radius: 7px;
+  height: 100%;
+  padding-left: 10px;
+  border: 1px dotted #e2e2e2;
+  background-color: #f1f1f1;
+}
+
+.copyText button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  background-color: var(--accentColor);
+  width: 50px;
+  height: 100%;
+  border-radius: 0 var(--borderRadius) var(--borderRadius) 0;
+}
+
+.copied {
+  background-color: #0de486;
+}
+
+.copyText img {
+  width: 20px;
+}

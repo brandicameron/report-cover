@@ -1,0 +1,15 @@
+.placeholder {
+  width: 40vw;
+  height: 100vh;
+  background-color: #e1e1e1;
+  background-image: url(../../images/pdf.svg);
+  background-repeat: no-repeat;
+  background-size: 75px;
+  background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+  .placeholder {
+    width: 100vw;
+  }
+}

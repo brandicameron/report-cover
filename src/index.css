@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root {
+  --accentColor: #36b54a;
+  --textColor: #333;
+  --borderRadius: 7px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: var(--textColor);
+}
+
+input {
+  font-family: inherit;
+  color: var(--textColor);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+header {
+  position: absolute;
+  top: 0;
+}
+
+.logo {
+  margin: 0.75rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  header {
+    position: relative;
+  }
 }

@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Header from './components/Header';
+import PlaceholderPhoto from '../src/images/placeholder.jpg';
+import CoverForm from './components/Forms/CoverForm';
+import CoverPDF from './components/CoverPDF';
 
-function App() {
+export default function App() {
+  const [showPDF, setShowPDF] = useState(false);
+  const [data, setData] = useState({
+    city: 'Nashville',
+    state: 'Tennessee',
+    image: PlaceholderPhoto,
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <section className='flex'>
+        <CoverForm data={data} setData={setData} showPDF={showPDF} setShowPDF={setShowPDF} />
+        <CoverPDF data={data} showPDF={showPDF} />
+      </section>
+    </>
   );
 }
-
-export default App;
