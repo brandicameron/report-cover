@@ -1,13 +1,12 @@
 import { Page, Text, Font, Document, StyleSheet, Image, PDFViewer } from '@react-pdf/renderer';
 import Placeholder from './Placeholder/Placeholder';
+import fontLight from '../fonts/Lato-Light.ttf';
+import fontRegular from '../fonts/Lato-Regular.ttf';
 
 export default function CoverPDF({ data, showPDF }) {
   Font.register({
     family: 'Lato',
-    fonts: [
-      { src: '/fonts/Lato-Light.ttf' },
-      { src: '/fonts/Lato-Regular.ttf', fontStyle: 'bold', fontWeight: 400 },
-    ],
+    fonts: [{ src: fontLight }, { src: fontRegular, fontStyle: 'bold', fontWeight: 400 }],
   });
 
   const styles = StyleSheet.create({

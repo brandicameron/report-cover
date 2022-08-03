@@ -24,6 +24,15 @@ VIEW LIVE: [https://brandicameron.github.io/report-cover/](https://brandicameron
 
 ---
 
+---
+
+## Project Links:
+
+- [React-pdf](https://react-pdf.org/)
+- [PDF Merger](https://github.com/nbesli/pdf-merger-js#readme)
+
+---
+
 ## Author
 
 ---
