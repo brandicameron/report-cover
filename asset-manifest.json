@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/report-cover/static/css/main.b0b58d77.chunk.css",
+    "main.css": "/report-cover/static/css/main.2555521a.chunk.css",
     "main.js": "/report-cover/static/js/main.0a20f5f4.chunk.js",
     "main.js.map": "/report-cover/static/js/main.0a20f5f4.chunk.js.map",
     "runtime-main.js": "/report-cover/static/js/runtime-main.45284828.js",
@@ -8,7 +8,7 @@
     "static/js/2.30c2b4ab.chunk.js": "/report-cover/static/js/2.30c2b4ab.chunk.js",
     "static/js/2.30c2b4ab.chunk.js.map": "/report-cover/static/js/2.30c2b4ab.chunk.js.map",
     "index.html": "/report-cover/index.html",
-    "static/css/main.b0b58d77.chunk.css.map": "/report-cover/static/css/main.b0b58d77.chunk.css.map",
+    "static/css/main.2555521a.chunk.css.map": "/report-cover/static/css/main.2555521a.chunk.css.map",
     "static/js/2.30c2b4ab.chunk.js.LICENSE.txt": "/report-cover/static/js/2.30c2b4ab.chunk.js.LICENSE.txt",
     "static/media/Lato-Light.bfc37ff1.ttf": "/report-cover/static/media/Lato-Light.bfc37ff1.ttf",
     "static/media/Lato-Regular.9919edff.ttf": "/report-cover/static/media/Lato-Regular.9919edff.ttf",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.45284828.js",
     "static/js/2.30c2b4ab.chunk.js",
-    "static/css/main.b0b58d77.chunk.css",
+    "static/css/main.2555521a.chunk.css",
     "static/js/main.0a20f5f4.chunk.js"
   ]
 }
