@@ -89,6 +89,7 @@ export default function CoverForm({ data, setData, showPDF, setShowPDF }) {
       handler: handleInputChange,
     },
     {
+      class: 'span2',
       label: 'Client Email',
       type: 'text',
       name: 'email',
