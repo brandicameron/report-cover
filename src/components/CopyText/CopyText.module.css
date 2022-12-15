@@ -29,6 +29,16 @@
   border-radius: 0 var(--borderRadius) var(--borderRadius) 0;
 }
 
+.blink {
+  animation: blink 1s steps(2, jump-none) infinite;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
 .copied {
   background-color: #0de486;
 }

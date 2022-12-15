@@ -5,9 +5,14 @@ import CopyIcon from '../../images/copy.svg';
 
 export default function CopyText({ data }) {
   const [copied, setCopied] = useState(false);
+  const [blink, setBlink] = useState(true);
+
+  const copyStyles = copied ? `${styles.copied}` : ``;
+  const blinkStyles = blink ? `${styles.blink}` : ``;
 
   const copyToClipboard = async (text) => {
     setCopied(true);
+    setBlink(false);
     try {
       await navigator.clipboard.writeText(text);
     } catch (e) {
@@ -23,7 +28,7 @@ export default function CopyText({ data }) {
       <p className={styles.text}>{`Home Inspection - ${data.address}`}</p>
       <button
         onClick={() => copyToClipboard(`Home Inspection - ${data.address}`)}
-        className={copied ? `${styles.copied}` : ``}
+        className={`${copyStyles} ${blinkStyles}`}
       >
         <img src={copied ? Checkmark : CopyIcon} alt='Copy to Clipboard' />
       </button>
